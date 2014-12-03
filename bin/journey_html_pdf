@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+#cron_envs=[:test, :staging]
+cron_envs = [:staging]
+
+rails_root = File.dirname(__FILE__) + '/../'
+cron_envs.each do | e|
+    puts "\n---------\nStart sync for environment #{e} >>>>>>"
+	system("cd #{rails_root}; RAILS_ENV=#{e} rake html_to_pdf:html_pdf_convert --trace")	
+    puts "End sync for environment #{e} <<<<<<"
+end

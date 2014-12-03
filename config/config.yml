@@ -1,0 +1,15 @@
+test:
+  journey:
+    username: 53fad2bc027894db990000a8
+    password: Z9_nNHRaOJU9pNYENRcO
+    base_uri: "https://run-testing.journeyapps.com/api/v1"
+staging:
+  journey:
+    username: 54256e214783e312e6003607
+    password: OxaKbzeU1Bi8009yaY1u
+    base_uri: "https://run-staging.journeyapps.com/api/v1"
+ production:
+  journey:
+    username: 542bcb6c4783e3988d00c674
+    password: xyLxsEhrN26oYwl8JazT
+    base_uri: "https://run.journeyapps.com/api/v1"  
