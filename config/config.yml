@@ -8,7 +8,7 @@ staging:
     username: 54256e214783e312e6003607
     password: OxaKbzeU1Bi8009yaY1u
     base_uri: "https://run-staging.journeyapps.com/api/v1"
- production:
+production:
   journey:
     username: 542bcb6c4783e3988d00c674
     password: xyLxsEhrN26oYwl8JazT
