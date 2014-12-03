@@ -214,7 +214,7 @@ namespace :html_to_pdf do
         from      'accrete.aceretail@gmail.com'
         to        "harsh22288@gmail.com"                        
         subject   'Recall Report'
-        body      'Recall'
+        body      'PFA Recall Report'
         add_file :filename => filename, :content => file_content
         puts "****************MAIL SENT*************************"
 
