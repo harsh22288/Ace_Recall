@@ -36,6 +36,8 @@ class UnirestJourneyClient
   get JourneyUri.consignment_visit_header, status:1, email_status:0
  end
  
+  ##### Consignment ########
+
  def get_consignment_user_id(usersid_uuid)
    get JourneyUri.consignment_user_id(usersid_uuid)
  end
@@ -60,6 +62,27 @@ class UnirestJourneyClient
        put JourneyUri.put_consignment_visit_header(visit_id), parameters
 
  end
+ 
+ ################## MAPS STUDIO ############################
+ 
+ def get_maps_studio_visit
+  get JourneyUri.maps_studio_visit, status:1, email_status:0
+ end
+ 
+ def get_maps_studio_user_info(userinfo_uuid)
+   get JourneyUri.maps_visit_user_info, user_object_id: userinfo_uuid
+ end
+ 
+ def get_maps_studio_productlist(maps_studio_visit_uuid)
+   get JourneyUri.maps_studio_productlist, maps_studio_visit_id: maps_studio_visit_uuid
+ end
+ 
+ def get_email_id
+   email
+ end
+ 
+ 
+ 
  
  private
   def auth

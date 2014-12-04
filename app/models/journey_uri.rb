@@ -42,7 +42,7 @@ class JourneyUri < ActiveRecord::Base
   def self.put_recall_visit_header(uuid=nil)
     uri("recall_visit", uuid)
   end
-  
+ ######## CONSIGNMENT ##########
   def self.consignment_visit_header(uuid=nil)
     uri("consignment_visit", uuid)
   end
@@ -66,4 +66,19 @@ class JourneyUri < ActiveRecord::Base
   def self.put_consignment_visit_header(uuid=nil)
     uri("consignment_visit", uuid)
   end
+  
+  ############## MAPS STUDIO #############]
+  
+  def self.maps_studio_visit(uuid=nil)
+    uri("maps_studio_visit", uuid)
+  end
+  
+  def self.maps_visit_user_info(uuid=nil)
+    uri("userinfo", uuid)
+  end
+  
+   def self.maps_studio_productlist(uuid=nil)
+    uri("maps_studio_visit_product", uuid)
+  end
+  
 end

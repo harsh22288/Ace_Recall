@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+Dir.chdir(File.dirname(__FILE__) + '/../')
+require './bin/process.rb'
+
+environment = ENV['RAILS_ENV']
+environment ||= :test
+puts environment
+
+task = { 
+  description: "PDF File creation",
+  pid_file: "tmp/#{File.basename(__FILE__)}.#{environment}.pid",
+  task: "maps_studio:maps_studio_convert",
+  environment: environment
+}
+
+
+run_tasks(task)
