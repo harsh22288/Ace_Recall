@@ -63,6 +63,7 @@ class UnirestJourneyClient
 
  end
  
+ 
  ################## MAPS STUDIO ############################
  
  def get_maps_studio_visit
@@ -75,6 +76,11 @@ class UnirestJourneyClient
  
  def get_maps_studio_productlist(maps_studio_visit_uuid)
    get JourneyUri.maps_studio_productlist, maps_studio_visit_id: maps_studio_visit_uuid
+ end
+ 
+ def put_maps_studio_visit(visit_id, parameters)
+       put JourneyUri.put_consignment_visit_header(visit_id), parameters
+
  end
  
  def get_email_id

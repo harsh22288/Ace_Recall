@@ -278,8 +278,8 @@ namespace :maps_studio do
         add_file :filename => filename, :content => file_content
         puts "****************MAIL SENT*************************"
 
-        #payload = {"consignment_visit" => {"email_status"=>1}}
-        #journey_obj.put_consignment_visit_header(consignment_info["id"], payload)
+        payload = {"maps_studio_visit" => {"email_status"=>1}}
+        journey_obj.put_maps_studio_visit(maps_studio_info["id"], payload)
       end
    end #end of recalls_visit_header
   end

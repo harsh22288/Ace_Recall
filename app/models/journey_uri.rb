@@ -63,8 +63,8 @@ class JourneyUri < ActiveRecord::Base
     uri("consignment_visit_product", uuid)
   end
   
-  def self.put_consignment_visit_header(uuid=nil)
-    uri("consignment_visit", uuid)
+  def self.put_maps_studio_visit(uuid=nil)
+    uri("maps_studio_visit", uuid)
   end
   
   ############## MAPS STUDIO #############]
