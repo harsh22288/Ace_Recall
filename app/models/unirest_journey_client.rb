@@ -79,7 +79,7 @@ class UnirestJourneyClient
  end
  
  def put_maps_studio_visit(visit_id, parameters)
-       put JourneyUri.put_consignment_visit_header(visit_id), parameters
+       put JourneyUri.put_maps_studio_visit(visit_id), parameters
 
  end
  
