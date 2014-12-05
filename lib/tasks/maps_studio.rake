@@ -10,7 +10,7 @@ namespace :maps_studio do
   end
   
   task :maps_studio_convert => :environment do
-    puts "Write your main logic for conversion here"
+    puts "Write your main logic for Maps conversion here"
     journey_obj = UnirestJourneyClient.new
     get_html_string_maps(journey_obj)
   end
@@ -19,9 +19,9 @@ namespace :maps_studio do
    #client = Pdfcrowd::Client.new("accrete", "1cabeac1948fa82be5702cfdd6e0bf9d")
     client = Pdfcrowd::Client.new("naveen05", "4d0ab2416de179d799b9fc8250f34a98")
 
-  maps_studio_visit = journey_obj.get_maps_studio_visit.body
+    maps_studio_visit = journey_obj.get_maps_studio_visit.body
   
-  maps_studio_visit.each do |maps_studio_info|
+    maps_studio_visit.each do |maps_studio_info|
     #recall_visit_header_list= journey_obj.get_recall_visit_header(recall_info["id"]).body
     #puts recall_visit_header_list
     

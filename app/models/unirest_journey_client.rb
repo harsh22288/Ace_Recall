@@ -80,13 +80,34 @@ class UnirestJourneyClient
  
  def put_maps_studio_visit(visit_id, parameters)
        put JourneyUri.put_maps_studio_visit(visit_id), parameters
-
  end
+ 
+ def get_data_model
+    get JourneyUri.data_model
+  end
  
  def get_email_id
    email
  end
  
+ 
+ ###################### COMZTEK ########################
+ 
+ def get_comztek_visit
+  get JourneyUri.comztek_visit, status:1, email_status:0
+ end
+ 
+ def get_comztek_user_info(userinfo_uuid)
+   get JourneyUri.comztek_visit_user_info, user_object_id: userinfo_uuid
+ end
+ 
+ def get_comztek_visit_productlist(comztek_visit_uuid)
+   get JourneyUri.comztek_visit_productlist, comztek_visit_id: comztek_visit_uuid
+ end
+ 
+ def put_comztek_visit(visit_id, parameters)
+       put JourneyUri.put_comztek_visit(visit_id), parameters
+ end
  
  
  

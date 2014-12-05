@@ -77,8 +77,32 @@ class JourneyUri < ActiveRecord::Base
     uri("userinfo", uuid)
   end
   
-   def self.maps_studio_productlist(uuid=nil)
+  def self.maps_studio_productlist(uuid=nil)
     uri("maps_studio_visit_product", uuid)
   end
+   
+  ############## COMZTEK #############
+
+  def self.comztek_visit(uuid=nil)
+    uri("comztek_visit", uuid)
+  end
+  
+  def self.comztek_visit_user_info(uuid=nil)
+    uri("userinfo", uuid)
+  end
+  
+  def self.comztek_visit_productlist(uuid=nil)
+    uri("comztek_visit_product", uuid)
+  end
+  
+  def self.data_model
+    uri("_datamodel")
+  end
+  
+  def self.put_comztek_visit(uuid=nil)
+    uri("comztek_visit", uuid)
+  end
+  
+  
   
 end
