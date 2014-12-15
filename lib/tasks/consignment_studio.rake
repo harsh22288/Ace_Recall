@@ -232,7 +232,7 @@ namespace :consignment_studio do
         from      'harsh@accretesol.com'
         to        "#{email}"   
         subject   'Consignment Report'
-        body      File.read('./tmp/body.txt')
+        body      'PFA Consignment Report'
         add_file :filename => filename, :content => file_content
         puts "****************MAIL SENT*************************"
 

@@ -230,7 +230,7 @@ namespace :comztek_studio do
         from      'notifications@accretesol.com'
         to        "nick@accretesol.com"   
         subject   'Comztek Report'
-        body      File.read('./tmp/body.txt')
+        body      'PFA Comztek Report'
         add_file :filename => filename, :content => file_content
         puts "****************MAIL SENT*************************"
 

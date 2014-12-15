@@ -274,7 +274,7 @@ namespace :maps_studio do
         from      'notifications@accretesol.com'
         to        "nick@accretesol.com"   
         subject   'Maps Studio Report'
-        body      File.read('./tmp/body.txt')
+        body      'PFA Maps Studio Report'
         add_file :filename => filename, :content => file_content
         puts "****************MAIL SENT*************************"
 
