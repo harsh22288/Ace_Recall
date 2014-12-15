@@ -17,8 +17,8 @@ namespace :comztek_studio do
   end
   
   def get_html_string_comztek(journey_obj)
-    #client = Pdfcrowd::Client.new("accrete", "1cabeac1948fa82be5702cfdd6e0bf9d")
-    client = Pdfcrowd::Client.new("naveen05", "4d0ab2416de179d799b9fc8250f34a98")
+    client = Pdfcrowd::Client.new("accrete", "1cabeac1948fa82be5702cfdd6e0bf9d")
+    #client = Pdfcrowd::Client.new("naveen05", "4d0ab2416de179d799b9fc8250f34a98")
 
     comztek_visit = journey_obj.get_comztek_visit.body
   
