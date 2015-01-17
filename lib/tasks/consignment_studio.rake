@@ -19,7 +19,7 @@ namespace :consignment_studio do
   def get_html_string_consignment(journey_obj)
   client = Pdfcrowd::Client.new("accrete", "1cabeac1948fa82be5702cfdd6e0bf9d")
   #client = Pdfcrowd::Client.new("naveen05", "4d0ab2416de179d799b9fc8250f34a98")
-
+#************ GOO D *****
   consignment_visit_header = journey_obj.get_consignment_visit_header.body
   
   consignment_visit_header.each do |consignment_info|
